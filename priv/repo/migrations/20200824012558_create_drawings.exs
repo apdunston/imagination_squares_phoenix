@@ -5,7 +5,7 @@ defmodule ImaginationSquaresPhoenix.Repo.Migrations.CreateDrawings do
     create table(:drawings) do
       add :user_id, :integer
       add :name, :string
-      add :content, :map
+      add :content, :map, null: true
 
       timestamps()
     end

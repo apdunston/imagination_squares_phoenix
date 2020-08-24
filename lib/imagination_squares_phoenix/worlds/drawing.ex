@@ -17,6 +17,6 @@ defmodule ImaginationSquaresPhoenix.Worlds.Drawing do
   def changeset(drawing, attrs) do
     drawing
     |> cast(attrs, [:user_id, :name, :content])
-    |> validate_required([:user_id, :name, :content])
+    |> validate_required([:user_id, :name])
   end
 end

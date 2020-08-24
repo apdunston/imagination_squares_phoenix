@@ -16,10 +16,6 @@
     Name: <%= text_input f, :name %>
   </label>
 
-  <label>
-    Content: <%= textarea f, :content %>
-  </label>
-
   <%= submit "Submit" %>
 <% end %>
 

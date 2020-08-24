@@ -1,0 +1,863 @@
+Last login: Sat Aug 22 18:56:02 on ttys001
+➜  ~ cd secondaryDev/imagination_squares_phoenix
+➜  imagination_squares_phoenix ls
+README.md _build    assets    config    deps      lib       mix.exs   mix.lock  notes     priv      test
+➜  imagination_squares_phoenix mix phx.routes
+     pow_session_path  GET     /session/new                           Pow.Phoenix.SessionController :new
+     pow_session_path  POST    /session                               Pow.Phoenix.SessionController :create
+     pow_session_path  DELETE  /session                               Pow.Phoenix.SessionController :delete
+pow_registration_path  GET     /registration/edit                     Pow.Phoenix.RegistrationController :edit
+pow_registration_path  GET     /registration/new                      Pow.Phoenix.RegistrationController :new
+pow_registration_path  POST    /registration                          Pow.Phoenix.RegistrationController :create
+pow_registration_path  PATCH   /registration                          Pow.Phoenix.RegistrationController :update
+                       PUT     /registration                          Pow.Phoenix.RegistrationController :update
+pow_registration_path  DELETE  /registration                          Pow.Phoenix.RegistrationController :delete
+            page_path  GET     /                                      ImaginationSquaresPhoenixWeb.PageController :index
+  live_dashboard_path  GET     /dashboard                             Phoenix.LiveView.Plug :home
+  live_dashboard_path  GET     /dashboard/:node/home                  Phoenix.LiveView.Plug :home
+  live_dashboard_path  GET     /dashboard/:node/os_mon                Phoenix.LiveView.Plug :os_mon
+  live_dashboard_path  GET     /dashboard/:node/metrics               Phoenix.LiveView.Plug :metrics
+  live_dashboard_path  GET     /dashboard/:node/applications          Phoenix.LiveView.Plug :applications
+  live_dashboard_path  GET     /dashboard/:node/processes             Phoenix.LiveView.Plug :processes
+  live_dashboard_path  GET     /dashboard/:node/ports                 Phoenix.LiveView.Plug :ports
+  live_dashboard_path  GET     /dashboard/:node/sockets               Phoenix.LiveView.Plug :sockets
+  live_dashboard_path  GET     /dashboard/:node/ets                   Phoenix.LiveView.Plug :ets
+  live_dashboard_path  GET     /dashboard/:node/request_logger        Phoenix.LiveView.Plug :request_logger
+  live_dashboard_path  GET     /dashboard/:node/:page                 Phoenix.LiveView.Plug :page
+            websocket  WS      /live/websocket                        Phoenix.LiveView.Socket
+             longpoll  GET     /live/longpoll                         Phoenix.LiveView.Socket
+             longpoll  POST    /live/longpoll                         Phoenix.LiveView.Socket
+            websocket  WS      /socket/websocket                      ImaginationSquaresPhoenixWeb.UserSocket
+
+➜  imagination_squares_phoenix psql imagination_squares_dev
+psql: FATAL:  role "bitcapulet" does not exist
+➜  imagination_squares_phoenix psql -u postgres imagination_squares_dev
+psql: invalid option -- u
+Try "psql --help" for more information.
+➜  imagination_squares_phoenix psql --help
+psql is the PostgreSQL interactive terminal.
+
+Usage:
+  psql [OPTION]... [DBNAME [USERNAME]]
+
+General options:
+  -c, --command=COMMAND    run only single command (SQL or internal) and exit
+  -d, --dbname=DBNAME      database name to connect to (default: "bitcapulet")
+  -f, --file=FILENAME      execute commands from file, then exit
+  -l, --list               list available databases, then exit
+  -v, --set=, --variable=NAME=VALUE
+                           set psql variable NAME to VALUE
+                           (e.g., -v ON_ERROR_STOP=1)
+  -V, --version            output version information, then exit
+  -X, --no-psqlrc          do not read startup file (~/.psqlrc)
+  -1 ("one"), --single-transaction
+                           execute as a single transaction (if non-interactive)
+  -?, --help[=options]     show this help, then exit
+      --help=commands      list backslash commands, then exit
+      --help=variables     list special variables, then exit
+
+Input and output options:
+  -a, --echo-all           echo all input from script
+  -b, --echo-errors        echo failed commands
+  -e, --echo-queries       echo commands sent to server
+  -E, --echo-hidden        display queries that internal commands generate
+  -L, --log-file=FILENAME  send session log to file
+  -n, --no-readline        disable enhanced command line editing (readline)
+  -o, --output=FILENAME    send query results to file (or |pipe)
+  -q, --quiet              run quietly (no messages, only query output)
+  -s, --single-step        single-step mode (confirm each query)
+  -S, --single-line        single-line mode (end of line terminates SQL command)
+
+Output format options:
+  -A, --no-align           unaligned table output mode
+  -F, --field-separator=STRING
+                           field separator for unaligned output (default: "|")
+  -H, --html               HTML table output mode
+  -P, --pset=VAR[=ARG]     set printing option VAR to ARG (see \pset command)
+  -R, --record-separator=STRING
+                           record separator for unaligned output (default: newline)
+  -t, --tuples-only        print rows only
+  -T, --table-attr=TEXT    set HTML table tag attributes (e.g., width, border)
+  -x, --expanded           turn on expanded table output
+  -z, --field-separator-zero
+                           set field separator for unaligned output to zero byte
+  -0, --record-separator-zero
+                           set record separator for unaligned output to zero byte
+General
+  \copyright             show PostgreSQL usage and distribution terms
+  \crosstabview [COLUMNS] execute query and display results in crosstab
+  \errverbose            show most recent error message at maximum verbosity
+  \g [FILE] or ;         execute query (and send results to file or |pipe)
+  \gdesc                 describe result of query, without executing it
+  \gexec                 execute query, then execute each value in its result
+  \gset [PREFIX]         execute query and store results in psql variables
+  \gx [FILE]             as \g, but forces expanded output mode
+  \q                     quit psql
+  \watch [SEC]           execute query every SEC seconds
+
+Help
+  \? [commands]          show help on backslash commands
+  \? options             show help on psql command-line options
+  \? variables           show help on special variables
+  \h [NAME]              help on syntax of SQL commands, * for all commands
+
+Query Buffer
+  \e [FILE] [LINE]       edit the query buffer (or file) with external editor
+  \ef [FUNCNAME [LINE]]  edit function definition with external editor
+  \ev [VIEWNAME [LINE]]  edit view definition with external editor
+  \p                     show the contents of the query buffer
+  \r                     reset (clear) the query buffer
+  \s [FILE]              display history or save it to file
+  \w FILE                write query buffer to file
+
+Input/Output
+  \copy ...              perform SQL COPY with data stream to the client host
+  \echo [STRING]         write string to standard output
+  \i FILE                execute commands from file
+  \ir FILE               as \i, but relative to location of current script
+  \o [FILE]              send all query results to file or |pipe
+  \qecho [STRING]        write string to query output stream (see \o)
+
+Conditional
+  \if EXPR               begin conditional block
+  \elif EXPR             alternative within current conditional block
+  \else                  final alternative within current conditional block
+  \endif                 end conditional block
+
+Informational
+  (options: S = show system objects, + = additional detail)
+  \d[S+]                 list tables, views, and sequences
+  \d[S+]  NAME           describe table, view, sequence, or index
+  \da[S]  [PATTERN]      list aggregates
+  \dA[+]  [PATTERN]      list access methods
+  \db[+]  [PATTERN]      list tablespaces
+  \dc[S+] [PATTERN]      list conversions
+  \dC[+]  [PATTERN]      list casts
+  \dd[S]  [PATTERN]      show object descriptions not displayed elsewhere
+  \dD[S+] [PATTERN]      list domains
+  \ddp    [PATTERN]      list default privileges
+  \dE[S+] [PATTERN]      list foreign tables
+  \det[+] [PATTERN]      list foreign tables
+
+Connection options:
+  -h, --host=HOSTNAME      database server host or socket directory (default: "local socket")
+  -p, --port=PORT          database server port (default: "5432")
+  -U, --username=USERNAME  database user name (default: "bitcapulet")
+  -w, --no-password        never prompt for password
+  -W, --password           force password prompt (should happen automatically)
+
+For more information, type "\?" (for internal commands) or "\help" (for SQL
+commands) from within psql, or consult the psql section in the PostgreSQL
+documentation.
+
+Report bugs to <pgsql-bugs@postgresql.org>.
+➜  imagination_squares_phoenix psql -U postgres imagination_squares_dev
+psql: FATAL:  database "imagination_squares_dev" does not exist
+➜  imagination_squares_phoenix psql -U postgres
+psql (11.5)
+Type "help" for help.
+
+postgres=# \T
+Table attributes unset.
+postgres=# \t
+Tuples only is on.
+postgres=# \dt
+General
+  \copyright             show PostgreSQL usage and distribution terms
+  \crosstabview [COLUMNS] execute query and display results in crosstab
+  \errverbose            show most recent error message at maximum verbosity
+  \g [FILE] or ;         execute query (and send results to file or |pipe)
+  \gdesc                 describe result of query, without executing it
+  \gexec                 execute query, then execute each value in its result
+  \gset [PREFIX]         execute query and store results in psql variables
+  \gx [FILE]             as \g, but forces expanded output mode
+  \q                     quit psql
+  \watch [SEC]           execute query every SEC seconds
+
+Help
+  \? [commands]          show help on backslash commands
+  \? options             show help on psql command-line options
+  \? variables           show help on special variables
+  \h [NAME]              help on syntax of SQL commands, * for all commands
+
+Query Buffer
+  \e [FILE] [LINE]       edit the query buffer (or file) with external editor
+  \ef [FUNCNAME [LINE]]  edit function definition with external editor
+  \ev [VIEWNAME [LINE]]  edit view definition with external editor
+  \p                     show the contents of the query buffer
+  \r                     reset (clear) the query buffer
+  \s [FILE]              display history or save it to file
+  \w FILE                write query buffer to file
+
+Input/Output
+  \copy ...              perform SQL COPY with data stream to the client host
+  \echo [STRING]         write string to standard output
+  \i FILE                execute commands from file
+  \ir FILE               as \i, but relative to location of current script
+  \o [FILE]              send all query results to file or |pipe
+  \qecho [STRING]        write string to query output stream (see \o)
+
+Conditional
+  \if EXPR               begin conditional block
+  \elif EXPR             alternative within current conditional block
+  \else                  final alternative within current conditional block
+  \endif                 end conditional block
+
+Informational
+  (options: S = show system objects, + = additional detail)
+  \d[S+]                 list tables, views, and sequences
+  \d[S+]  NAME           describe table, view, sequence, or index
+  \da[S]  [PATTERN]      list aggregates
+  \dA[+]  [PATTERN]      list access methods
+  \db[+]  [PATTERN]      list tablespaces
+  \dc[S+] [PATTERN]      list conversions
+  \dC[+]  [PATTERN]      list casts
+  \dd[S]  [PATTERN]      show object descriptions not displayed elsewhere
+  \dD[S+] [PATTERN]      list domains
+  \ddp    [PATTERN]      list default privileges
+  \dE[S+] [PATTERN]      list foreign tables
+  \det[+] [PATTERN]      list foreign tables
+  \des[+] [PATTERN]      list foreign servers
+  \deu[+] [PATTERN]      list user mappings
+  \dew[+] [PATTERN]      list foreign-data wrappers
+  \df[anptw][S+] [PATRN] list [only agg/normal/procedures/trigger/window] functions
+  \dF[+]  [PATTERN]      list text search configurations
+  \dFd[+] [PATTERN]      list text search dictionaries
+  \dFp[+] [PATTERN]      list text search parsers
+  \dFt[+] [PATTERN]      list text search templates
+  \dg[S+] [PATTERN]      list roles
+  \di[S+] [PATTERN]      list indexes
+  \dl                    list large objects, same as \lo_list
+  \dL[S+] [PATTERN]      list procedural languages
+  \dm[S+] [PATTERN]      list materialized views
+  \dn[S+] [PATTERN]      list schemas
+  \do[S]  [PATTERN]      list operators
+  \dO[S+] [PATTERN]      list collations
+  \dp     [PATTERN]      list table, view, and sequence access privileges
+  \drds [PATRN1 [PATRN2]] list per-database role settings
+  \dRp[+] [PATTERN]      list replication publications
+  \dRs[+] [PATTERN]      list replication subscriptions
+  \ds[S+] [PATTERN]      list sequences
+  \dt[S+] [PATTERN]      list tables
+  \dT[S+] [PATTERN]      list data types
+  \du[S+] [PATTERN]      list roles
+  \dv[S+] [PATTERN]      list views
+  \dx[+]  [PATTERN]      list extensions
+  \dy     [PATTERN]      list event triggers
+  \l[+]   [PATTERN]      list databases
+  \sf[+]  FUNCNAME       show a function's definition
+  \sv[+]  VIEWNAME       show a view's definition
+  \z      [PATTERN]      same as \dp
+
+Formatting
+  \a                     toggle between unaligned and aligned output mode
+  \C [STRING]            set table title, or unset if none
+  \e [FILE] [LINE]       edit the query buffer (or file) with external editor
+  \ef [FUNCNAME [LINE]]  edit function definition with external editor
+  \ev [VIEWNAME [LINE]]  edit view definition with external editor
+  \p                     show the contents of the query buffer
+  \r                     reset (clear) the query buffer
+  \s [FILE]              display history or save it to file
+  \w FILE                write query buffer to file
+
+Input/Output
+  \copy ...              perform SQL COPY with data stream to the client host
+  \echo [STRING]         write string to standard output
+  \i FILE                execute commands from file
+  \ir FILE               as \i, but relative to location of current script
+  \o [FILE]              send all query results to file or |pipe
+  \qecho [STRING]        write string to query output stream (see \o)
+
+Conditional
+  \if EXPR               begin conditional block
+  \elif EXPR             alternative within current conditional block
+  \else                  final alternative within current conditional block
+  \endif                 end conditional block
+
+Informational
+  (options: S = show system objects, + = additional detail)
+  \d[S+]                 list tables, views, and sequences
+  \d[S+]  NAME           describe table, view, sequence, or index
+  \da[S]  [PATTERN]      list aggregates
+  \dA[+]  [PATTERN]      list access methods
+  \db[+]  [PATTERN]      list tablespaces
+  \dc[S+] [PATTERN]      list conversions
+  \dC[+]  [PATTERN]      list casts
+  \dd[S]  [PATTERN]      show object descriptions not displayed elsewhere
+  \dD[S+] [PATTERN]      list domains
+  \ddp    [PATTERN]      list default privileges
+  \dE[S+] [PATTERN]      list foreign tables
+Did not find any relations.
+postgres=# ?
+postgres-# \?
+General
+  \copyright             show PostgreSQL usage and distribution terms
+  \crosstabview [COLUMNS] execute query and display results in crosstab
+  \errverbose            show most recent error message at maximum verbosity
+  \g [FILE] or ;         execute query (and send results to file or |pipe)
+  \gdesc                 describe result of query, without executing it
+  \gexec                 execute query, then execute each value in its result
+  \gset [PREFIX]         execute query and store results in psql variables
+  \gx [FILE]             as \g, but forces expanded output mode
+  \q                     quit psql
+  \watch [SEC]           execute query every SEC seconds
+
+Help
+  \? [commands]          show help on backslash commands
+  \? options             show help on psql command-line options
+  \? variables           show help on special variables
+  \h [NAME]              help on syntax of SQL commands, * for all commands
+
+Query Buffer
+  \e [FILE] [LINE]       edit the query buffer (or file) with external editor
+  \ef [FUNCNAME [LINE]]  edit function definition with external editor
+  \ev [VIEWNAME [LINE]]  edit view definition with external editor
+  \p                     show the contents of the query buffer
+  \r                     reset (clear) the query buffer
+  \s [FILE]              display history or save it to file
+  \w FILE                write query buffer to file
+
+Input/Output
+  \copy ...              perform SQL COPY with data stream to the client host
+  \echo [STRING]         write string to standard output
+  \i FILE                execute commands from file
+  \ir FILE               as \i, but relative to location of current script
+  \o [FILE]              send all query results to file or |pipe
+  \qecho [STRING]        write string to query output stream (see \o)
+
+Conditional
+  \if EXPR               begin conditional block
+  \elif EXPR             alternative within current conditional block
+  \else                  final alternative within current conditional block
+  \endif                 end conditional block
+
+Informational
+  (options: S = show system objects, + = additional detail)
+  \d[S+]                 list tables, views, and sequences
+  \d[S+]  NAME           describe table, view, sequence, or index
+  \da[S]  [PATTERN]      list aggregates
+  \dA[+]  [PATTERN]      list access methods
+  \db[+]  [PATTERN]      list tablespaces
+  \dc[S+] [PATTERN]      list conversions
+  \dC[+]  [PATTERN]      list casts
+  \dd[S]  [PATTERN]      show object descriptions not displayed elsewhere
+  \dD[S+] [PATTERN]      list domains
+  \ddp    [PATTERN]      list default privileges
+  \dE[S+] [PATTERN]      list foreign tables
+  \det[+] [PATTERN]      list foreign tables
+  \des[+] [PATTERN]      list foreign servers
+  \deu[+] [PATTERN]      list user mappings
+  \dew[+] [PATTERN]      list foreign-data wrappers
+  \df[anptw][S+] [PATRN] list [only agg/normal/procedures/trigger/window] functions
+  \dF[+]  [PATTERN]      list text search configurations
+  \dFd[+] [PATTERN]      list text search dictionaries
+  \dFp[+] [PATTERN]      list text search parsers
+  \dFt[+] [PATTERN]      list text search templates
+  \dg[S+] [PATTERN]      list roles
+  \di[S+] [PATTERN]      list indexes
+  \dl                    list large objects, same as \lo_list
+  \dL[S+] [PATTERN]      list procedural languages
+  \dm[S+] [PATTERN]      list materialized views
+  \dn[S+] [PATTERN]      list schemas
+  \do[S]  [PATTERN]      list operators
+postgres-#
+postgres-#
+postgres-#
+postgres-#
+postgres-#
+postgres-#
+postgres-#
+postgres-# \?
+postgres-# \l
+ adrian                          | adrian   | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ foo_dev                         | adrian   | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ foo_test                        | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ imagination_squares_phoenix_dev | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ mappus_phoenix_dev              | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ papa_pal                        | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ papapal_dev                     | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ papapal_test                    | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ postgres                        | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ slide_affordance_graphql_dev    | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0                       | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+                                 |          |          |             |             | postgres=CTc/postgres
+ template1                       | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+                                 |          |          |             |             | postgres=CTc/postgres
+
+postgres-# connect imagination_squares_phoenix_dev
+postgres-# \dt
+Did not find any relations.
+postgres-# \t
+Tuples only is off.
+postgres-# \t
+Tuples only is on.
+postgres-# \?
+postgres-# \d
+Did not find any relations.
+postgres-# \?
+postgres-# \st
+Invalid command \st. Try \? for help.
+postgres-# \dt
+Did not find any relations.
+postgres-# select * from users;
+ERROR:  syntax error at or near "?"
+LINE 1: ?
+        ^
+postgres=# select * from users;
+ERROR:  relation "users" does not exist
+LINE 1: select * from users;
+                      ^
+postgres=# \q
+➜  imagination_squares_phoenix psql -U postgres imagination_squares_phoenix_dev
+psql (11.5)
+Type "help" for help.
+
+imagination_squares_phoenix_dev=# \dt
+               List of relations
+ Schema |       Name        | Type  |  Owner
+--------+-------------------+-------+----------
+ public | schema_migrations | table | postgres
+ public | users             | table | postgres
+(2 rows)
+
+imagination_squares_phoenix_dev=# select * from users;
+imagination_squares_phoenix_dev=# g st
+imagination_squares_phoenix_dev-# \q
+➜  imagination_squares_phoenix g st
+git: 'st' is not a git command. See 'git --help'.
+
+The most similar commands are
+	status
+	reset
+	stage
+	stash
+	svn
+➜  imagination_squares_phoenix g status
+fatal: not a git repository (or any of the parent directories): .git
+➜  imagination_squares_phoenix git init
+Initialized empty Git repository in /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/.git/
+➜  imagination_squares_phoenix git:(master) ✗
+➜  imagination_squares_phoenix git:(master) ✗ g add .
+➜  imagination_squares_phoenix git:(master) ✗ g commit -m "users work\! :baby:"
+[master (root-commit) bdcb042] users work! :baby:
+ 57 files changed, 9617 insertions(+)
+ create mode 100644 .formatter.exs
+ create mode 100644 .gitignore
+ create mode 100644 .vscode/settings.json
+ create mode 100644 Mnesia.nonode@nohost/DECISION_TAB.LOG
+ create mode 100644 Mnesia.nonode@nohost/Elixir.Pow.Store.Backend.MnesiaCache.DCD
+ create mode 100644 Mnesia.nonode@nohost/LATEST.LOG
+ create mode 100644 Mnesia.nonode@nohost/schema.DAT
+ create mode 100644 README.md
+ create mode 100644 assets/.babelrc
+ create mode 100644 assets/css/app.scss
+ create mode 100644 assets/css/phoenix.css
+ create mode 100644 assets/js/app.js
+ create mode 100644 assets/js/socket.js
+ create mode 100644 assets/package-lock.json
+ create mode 100644 assets/package.json
+ create mode 100644 assets/static/favicon.ico
+ create mode 100644 assets/static/images/phoenix.png
+ create mode 100644 assets/static/robots.txt
+ create mode 100644 assets/webpack.config.js
+ create mode 100644 config/config.exs
+ create mode 100644 config/dev.exs
+ create mode 100644 config/prod.exs
+ create mode 100644 config/prod.secret.exs
+ create mode 100644 config/test.exs
+ create mode 100644 lib/imagination_squares_phoenix.ex
+ create mode 100644 lib/imagination_squares_phoenix/application.ex
+ create mode 100644 lib/imagination_squares_phoenix/repo.ex
+ create mode 100644 lib/imagination_squares_phoenix/users/user.ex
+ create mode 100644 lib/imagination_squares_phoenix_web.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/channels/user_socket.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/controllers/page_controller.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/endpoint.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/gettext.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/router.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/telemetry.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/templates/layout/app.html.eex
+ create mode 100644 lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+ create mode 100644 lib/imagination_squares_phoenix_web/views/error_helpers.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/views/error_view.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/views/layout_view.ex
+ create mode 100644 lib/imagination_squares_phoenix_web/views/page_view.ex
+ create mode 100644 mix.exs
+ create mode 100644 mix.lock
+ create mode 100644 notes/building.md
+ create mode 100644 priv/gettext/en/LC_MESSAGES/errors.po
+ create mode 100644 priv/gettext/errors.pot
+ create mode 100644 priv/repo/migrations/.formatter.exs
+ create mode 100644 priv/repo/migrations/20200822230717_create_users.exs
+ create mode 100644 priv/repo/seeds.exs
+ create mode 100644 test/imagination_squares_phoenix_web/controllers/page_controller_test.exs
+ create mode 100644 test/imagination_squares_phoenix_web/views/error_view_test.exs
+ create mode 100644 test/imagination_squares_phoenix_web/views/layout_view_test.exs
+ create mode 100644 test/imagination_squares_phoenix_web/views/page_view_test.exs
+ create mode 100644 test/support/channel_case.ex
+ create mode 100644 test/support/conn_case.ex
+ create mode 100644 test/support/data_case.ex
+ create mode 100644 test/test_helper.exs
+➜  imagination_squares_phoenix git:(master) mix phoenix.gen.model Drawing drawings user_id:integer name:string content:json
+** (Mix) The task "phoenix.gen.model" could not be found
+➜  imagination_squares_phoenix git:(master) mix list
+** (Mix) The task "list" could not be found
+➜  imagination_squares_phoenix git:(master) mix help
+mix                                            # Runs the default task (current: "mix run")
+mix app.start                                  # Starts all registered apps
+mix app.tree                                   # Prints the application tree
+mix archive                                    # Lists installed archives
+mix archive.build                              # Archives this project into a .ez file
+mix archive.install                            # Installs an archive locally
+mix archive.uninstall                          # Uninstalls archives
+mix clean                                      # Deletes generated application files
+mix cmd                                        # Executes the given command
+mix compile                                    # Compiles source files
+mix deps                                       # Lists dependencies and their status
+mix deps.clean                                 # Deletes the given dependencies' files
+mix deps.compile                               # Compiles dependencies
+mix deps.get                                   # Gets all out of date dependencies
+mix deps.tree                                  # Prints the dependency tree
+mix deps.unlock                                # Unlocks the given dependencies
+mix deps.update                                # Updates the given dependencies
+mix do                                         # Executes the tasks separated by comma
+mix ecto                                       # Prints Ecto help information
+mix ecto.create                                # Creates the repository storage
+mix ecto.drop                                  # Drops the repository storage
+mix ecto.dump                                  # Dumps the repository database structure
+mix ecto.gen.migration                         # Generates a new migration for the repo
+mix ecto.gen.repo                              # Generates a new repository
+mix ecto.load                                  # Loads previously dumped database structure
+mix ecto.migrate                               # Runs the repository migrations
+mix ecto.migrations                            # Displays the repository migration status
+mix ecto.reset                                 # Alias defined in mix.exs
+mix ecto.rollback                              # Rolls back the repository migrations
+mix ecto.setup                                 # Alias defined in mix.exs
+mix escript                                    # Lists installed escripts
+mix escript.build                              # Builds an escript for the project
+mix escript.install                            # Installs an escript locally
+mix escript.uninstall                          # Uninstalls escripts
+mix format                                     # Formats the given files/patterns
+mix gettext.extract                            # Extracts translations from source code
+mix gettext.merge                              # Merge template files into translation files
+mix help                                       # Prints help information for tasks
+mix hex                                        # Prints Hex help information
+mix hex.audit                                  # Shows retired Hex deps for the current project
+mix hex.build                                  # Builds a new package version locally
+mix hex.config                                 # Reads, updates or deletes local Hex config
+mix hex.docs                                   # Fetches or opens documentation of a package
+mix hex.info                                   # Prints Hex information
+mix hex.organization                           # Manages Hex.pm organizations
+mix hex.outdated                               # Shows outdated Hex deps for the current project
+mix hex.owner                                  # Manages Hex package ownership
+mix hex.package                                # Fetches or diffs packages
+mix hex.publish                                # Publishes a new package version
+mix hex.repo                                   # Manages Hex repositories
+mix hex.retire                                 # Retires a package version
+mix hex.search                                 # Searches for package names
+mix hex.user                                   # Manages your Hex user account
+mix loadconfig                                 # Loads and persists the given configuration
+mix local                                      # Lists local tasks
+mix local.hex                                  # Installs Hex locally
+mix local.phx                                  # Updates the Phoenix project generator locally
+mix local.public_keys                          # Manages public keys
+mix local.rebar                                # Installs Rebar locally
+mix new                                        # Creates a new Elixir project
+mix phx                                        # Prints Phoenix help information
+mix phx.digest                                 # Digests and compresses static files
+mix phx.digest.clean                           # Removes old versions of static assets.
+mix phx.gen.cert                               # Generates a self-signed certificate for HTTPS testing
+mix phx.gen.channel                            # Generates a Phoenix channel
+mix phx.gen.context                            # Generates a context with functions around an Ecto schema
+mix phx.gen.embedded                           # Generates an embedded Ecto schema file
+mix phx.gen.html                               # Generates controller, views, and context for an HTML resource
+mix phx.gen.json                               # Generates controller, views, and context for a JSON resource
+mix phx.gen.live                               # Generates LiveView, templates, and context for a resource
+mix phx.gen.presence                           # Generates a Presence tracker
+mix phx.gen.schema                             # Generates an Ecto schema and migration file
+mix phx.gen.secret                             # Generates a secret
+mix phx.new                                    # Creates a new Phoenix v1.5.4 application
+mix phx.new.ecto                               # Creates a new Ecto project within an umbrella project
+mix phx.new.web                                # Creates a new Phoenix web project within an umbrella project
+mix phx.routes                                 # Prints all routes
+mix phx.server                                 # Starts applications and their servers
+mix pow                                        # Prints Pow help information
+mix pow.ecto.gen.migration                     # Generates user migration file
+mix pow.ecto.gen.schema                        # Generates user schema module
+mix pow.ecto.install                           # Generates user schema module and migration file(s)
+mix pow.extension.ecto.gen.migrations          # Generates user migration files for extensions
+mix pow.extension.phoenix.gen.templates        # Generates views and templates for extensions
+mix pow.extension.phoenix.mailer.gen.templates # Generates mailer views and templates for extensions
+mix pow.install                                # Runs install mix tasks for Ecto and Phoenix
+mix pow.phoenix.gen.templates                  # Generates views and templates
+mix pow.phoenix.install                        # Prints instructions for setting up Pow with Phoenix
+mix profile.cprof                              # Profiles the given file or expression with cprof
+mix profile.eprof                              # Profiles the given file or expression with eprof
+mix profile.fprof                              # Profiles the given file or expression with fprof
+mix release                                    # Assembles a self-contained release
+mix release.init                               # Generates sample files for releases
+mix run                                        # Starts and runs the current application
+mix setup                                      # Alias defined in mix.exs
+mix test                                       # Alias defined in mix.exs
+mix test                                       # Runs a project's tests
+mix xref                                       # Prints cross reference information
+iex -S mix                                     # Starts IEx and runs the default task
+➜  imagination_squares_phoenix git:(master) mix help phx.gen.context
+
+                              mix phx.gen.context
+
+Generates a context with functions around an Ecto schema.
+
+    mix phx.gen.context Accounts User users name:string age:integer
+
+The first argument is the context module followed by the schema module and its
+plural name (used as the schema table name).
+
+The context is an Elixir module that serves as an API boundary for the given
+resource. A context often holds many related resources. Therefore, if the
+context already exists, it will be augmented with functions for the given
+resource.
+
+> Note: A resource may also be split over distinct contexts (such as
+> Accounts.User and Payments.User).
+
+The schema is responsible for mapping the database fields into an Elixir
+struct.
+
+Overall, this generator will add the following files to lib/your_app:
+
+  • a context module in accounts.ex, serving as the API boundary
+  • a schema in accounts/user.ex, with a users table
+
+A migration file for the repository and test files for the context will also be
+generated.
+
+## Generating without a schema
+
+In some cases, you may wish to bootstrap the context module and tests, but
+leave internal implementation of the context and schema to yourself. Use the
+--no-schema flags to accomplish this.
+
+## table
+
+By default, the table name for the migration and schema will be the plural name
+provided for the resource. To customize this value, a --table option may be
+provided. For example:
+
+    mix phx.gen.context Accounts User users --table cms_users
+
+## binary_id
+
+Generated migration can use binary_id for schema's primary key and its
+references with option --binary-id.
+
+## Default options
+
+This generator uses default options provided in the :generators configuration
+of your application. These are the defaults:
+
+    config :your_app, :generators,
+      migration: true,
+      binary_id: false,
+      sample_binary_id: "11111111-1111-1111-1111-111111111111"
+
+You can override those options per invocation by providing corresponding
+switches, e.g. --no-binary-id to use normal ids despite the default
+configuration or --migration to force generation of the migration.
+
+Read the documentation for phx.gen.schema for more information on attributes.
+
+Location: _build/dev/lib/phoenix/ebin
+➜  imagination_squares_phoenix git:(master) ✗ mix phx.gen.context Worlds Drawing drawings user_id:integer name:string content:json
+** (Mix) Unknown type `:json` given to generator. The supported types are: array, binary, boolean, date, decimal, float, integer, map, naive_datetime, naive_datetime_usec, references, string, text, time, time_usec, utc_datetime, utc_datetime_usec, uuid
+➜  imagination_squares_phoenix git:(master) ✗ mix phx.gen.context Worlds Drawing drawings user_id:integer name:string content:map
+* creating lib/imagination_squares_phoenix/worlds/drawing.ex
+* creating priv/repo/migrations/20200824012558_create_drawings.exs
+* creating lib/imagination_squares_phoenix/worlds.ex
+* injecting lib/imagination_squares_phoenix/worlds.ex
+* creating test/imagination_squares_phoenix/worlds_test.exs
+* injecting test/imagination_squares_phoenix/worlds_test.exs
+
+Remember to update your repository by running migrations:
+
+    $ mix ecto.migrate
+
+➜  imagination_squares_phoenix git:(master) ✗ mix ecto.migrate
+Compiling 2 files (.ex)
+Generated imagination_squares_phoenix app
+
+21:26:05.522 [info]  == Running 20200824012558 ImaginationSquaresPhoenix.Repo.Migrations.CreateDrawings.change/0 forward
+
+21:26:05.523 [info]  create table drawings
+
+21:26:05.571 [info]  == Migrated 20200824012558 in 0.0s
+➜  imagination_squares_phoenix git:(master) ✗ mix compile
+Compiling 2 files (.ex)
+
+== Compilation error in file lib/imagination_squares_phoenix/worlds/drawing.ex ==
+** (ArgumentError) field/association :user_id is already set on schema
+    lib/ecto/schema.ex:1996: Ecto.Schema.put_struct_field/3
+    lib/ecto/schema.ex:1754: Ecto.Schema.define_field/4
+    lib/ecto/schema.ex:1837: Ecto.Schema.__belongs_to__/4
+    lib/imagination_squares_phoenix/worlds/drawing.ex:11: (module)
+    (stdlib 3.13) erl_eval.erl:680: :erl_eval.do_apply/6
+    (elixir 1.10.3) lib/kernel/parallel_compiler.ex:304: anonymous fn/4 in Kernel.ParallelCompiler.spawn_workers/7
+➜  imagination_squares_phoenix git:(master) ✗ mix compile
+Compiling 2 files (.ex)
+➜  imagination_squares_phoenix git:(master) ✗ g tag session1
+➜  imagination_squares_phoenix git:(master) ✗ g tag
+➜  imagination_squares_phoenix git:(master) ✗ mix help mix phx.gen.html
+** (Mix) Unexpected arguments, expected "mix help" or "mix help TASK"
+➜  imagination_squares_phoenix git:(master) ✗ mix help phx.gen.html
+
+                                mix phx.gen.html
+
+Generates controller, views, and context for an HTML resource.
+
+    mix phx.gen.html Accounts User users name:string age:integer
+
+The first argument is the context module followed by the schema module and its
+plural name (used as the schema table name).
+
+The context is an Elixir module that serves as an API boundary for the given
+resource. A context often holds many related resources. Therefore, if the
+context already exists, it will be augmented with functions for the given
+resource.
+
+> Note: A resource may also be split over distinct contexts (such as
+> Accounts.User and Payments.User).
+
+The schema is responsible for mapping the database fields into an Elixir
+struct. It is followed by an optional list of attributes, with their respective
+names and types. See mix phx.gen.schema for more information on attributes.
+
+Overall, this generator will add the following files to lib/:
+
+  • a context module in lib/app/accounts.ex for the accounts API
+  • a schema in lib/app/accounts/user.ex, with an users table
+  • a view in lib/app_web/views/user_view.ex
+  • a controller in lib/app_web/controllers/user_controller.ex
+  • default CRUD templates in lib/app_web/templates/user
+
+## The context app
+
+A migration file for the repository and test files for the context and
+controller features will also be generated.
+
+The location of the web files (controllers, views, templates, etc) in an
+umbrella application will vary based on the :context_app config located in your
+applications :generators configuration. When set, the Phoenix generators will
+generate web files directly in your lib and test folders since the application
+is assumed to be isolated to web specific functionality. If :context_app is not
+set, the generators will place web related lib and test files in a web/
+directory since the application is assumed to be handling both web and domain
+specific functionality. Example configuration:
+
+    config :my_app_web, :generators, context_app: :my_app
+
+Alternatively, the --context-app option may be supplied to the generator:
+
+    mix phx.gen.html Sales User users --context-app warehouse
+
+## Web namespace
+
+By default, the controller and view will be namespaced by the schema name. You
+can customize the web module namespace by passing the --web flag with a module
+name, for example:
+
+    mix phx.gen.html Sales User users --web Sales
+
+Which would generate a lib/app_web/controllers/sales/user_controller.ex and
+lib/app_web/views/sales/user_view.ex.
+
+## Customising the context, schema, tables and migrations
+
+In some cases, you may wish to bootstrap HTML templates, controllers, and
+controller tests, but leave internal implementation of the context or schema to
+yourself. You can use the --no-context and --no-schema flags for file
+generation control.
+
+You can also change the table name or configure the migrations to use binary
+ids for primary keys, see mix phx.gen.schema for more information.
+
+Location: _build/dev/lib/phoenix/ebin
+➜  imagination_squares_phoenix git:(master) ✗ g add .
+➜  imagination_squares_phoenix git:(master) ✗ g commit -m "looping over drawings that aren't there"
+[master e9aa7df] looping over drawings that aren't there
+ 11 files changed, 1087 insertions(+), 10 deletions(-)
+ create mode 100644 lib/imagination_squares_phoenix/worlds.ex
+ create mode 100644 lib/imagination_squares_phoenix/worlds/drawing.ex
+ rewrite lib/imagination_squares_phoenix_web/templates/page/index.html.eex (99%)
+ create mode 100644 notes/session_1_terminal.log
+ create mode 100644 priv/repo/migrations/20200824012558_create_drawings.exs
+ create mode 100644 test/imagination_squares_phoenix/worlds_test.exs
+➜  imagination_squares_phoenix git:(master) mix phx.gen.html Worlds Drawing drawings name:string content:map --no-context --no-schema
+You are generating into an existing context.
+
+The ImaginationSquaresPhoenix.Worlds context currently has 6 functions and 1 files in its directory.
+
+  * It's OK to have multiple resources in the same context as long as they are closely related. But if a context grows too large, consider breaking it apart
+
+  * If they are not closely related, another context probably works better
+
+The fact two entities are related in the database does not mean they belong to the same context.
+
+If you are not sure, prefer creating a new context over adding to the existing one.
+
+Would you like to proceed? [Yn]
+* creating lib/imagination_squares_phoenix_web/controllers/drawing_controller.ex
+* creating lib/imagination_squares_phoenix_web/templates/drawing/edit.html.eex
+* creating lib/imagination_squares_phoenix_web/templates/drawing/form.html.eex
+* creating lib/imagination_squares_phoenix_web/templates/drawing/index.html.eex
+* creating lib/imagination_squares_phoenix_web/templates/drawing/new.html.eex
+* creating lib/imagination_squares_phoenix_web/templates/drawing/show.html.eex
+* creating lib/imagination_squares_phoenix_web/views/drawing_view.ex
+* creating test/imagination_squares_phoenix_web/controllers/drawing_controller_test.exs
+
+Add the resource to your browser scope in lib/imagination_squares_phoenix_web/router.ex:
+
+    resources "/drawings", DrawingController
+
+➜  imagination_squares_phoenix git:(master) ✗ mix phx.routes
+     pow_session_path  GET     /session/new                           Pow.Phoenix.SessionController :new
+     pow_session_path  POST    /session                               Pow.Phoenix.SessionController :create
+     pow_session_path  DELETE  /session                               Pow.Phoenix.SessionController :delete
+pow_registration_path  GET     /registration/edit                     Pow.Phoenix.RegistrationController :edit
+pow_registration_path  GET     /registration/new                      Pow.Phoenix.RegistrationController :new
+pow_registration_path  POST    /registration                          Pow.Phoenix.RegistrationController :create
+pow_registration_path  PATCH   /registration                          Pow.Phoenix.RegistrationController :update
+                       PUT     /registration                          Pow.Phoenix.RegistrationController :update
+pow_registration_path  DELETE  /registration                          Pow.Phoenix.RegistrationController :delete
+            page_path  GET     /                                      ImaginationSquaresPhoenixWeb.PageController :index
+  live_dashboard_path  GET     /dashboard                             Phoenix.LiveView.Plug :home
+  live_dashboard_path  GET     /dashboard/:node/home                  Phoenix.LiveView.Plug :home
+  live_dashboard_path  GET     /dashboard/:node/os_mon                Phoenix.LiveView.Plug :os_mon
+  live_dashboard_path  GET     /dashboard/:node/metrics               Phoenix.LiveView.Plug :metrics
+  live_dashboard_path  GET     /dashboard/:node/applications          Phoenix.LiveView.Plug :applications
+  live_dashboard_path  GET     /dashboard/:node/processes             Phoenix.LiveView.Plug :processes
+  live_dashboard_path  GET     /dashboard/:node/ports                 Phoenix.LiveView.Plug :ports
+  live_dashboard_path  GET     /dashboard/:node/sockets               Phoenix.LiveView.Plug :sockets
+  live_dashboard_path  GET     /dashboard/:node/ets                   Phoenix.LiveView.Plug :ets
+  live_dashboard_path  GET     /dashboard/:node/request_logger        Phoenix.LiveView.Plug :request_logger
+  live_dashboard_path  GET     /dashboard/:node/:page                 Phoenix.LiveView.Plug :page
+            websocket  WS      /live/websocket                        Phoenix.LiveView.Socket
+             longpoll  GET     /live/longpoll                         Phoenix.LiveView.Socket
+             longpoll  POST    /live/longpoll                         Phoenix.LiveView.Socket
+            websocket  WS      /socket/websocket                      ImaginationSquaresPhoenixWeb.UserSocket
+
+➜  imagination_squares_phoenix git:(master) ✗ mix ecto.rollback
+Compiling 1 file (.ex)
+
+21:52:49.550 [info]  == Running 20200824012558 ImaginationSquaresPhoenix.Repo.Migrations.CreateDrawings.change/0 backward
+
+21:52:49.552 [info]  drop table drawings
+
+21:52:49.575 [info]  == Migrated 20200824012558 in 0.0s
+➜  imagination_squares_phoenix git:(master) ✗ mix ecto.migrate
+
+21:52:53.227 [info]  == Running 20200824012558 ImaginationSquaresPhoenix.Repo.Migrations.CreateDrawings.change/0 forward
+
+21:52:53.228 [info]  create table drawings
+
+21:52:53.241 [info]  == Migrated 20200824012558 in 0.0s
+➜  imagination_squares_phoenix git:(master) ✗

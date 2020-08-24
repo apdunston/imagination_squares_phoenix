@@ -1,0 +1,28 @@
+<h1>Listing Drawings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Content</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for drawing <- @drawings do %>
+    <tr>
+      <td><%= drawing.name %></td>
+      <td><%= drawing.content %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.drawing_path(@conn, :show, drawing) %></span>
+        <span><%= link "Edit", to: Routes.drawing_path(@conn, :edit, drawing) %></span>
+        <span><%= link "Delete", to: Routes.drawing_path(@conn, :delete, drawing), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Drawing", to: Routes.drawing_path(@conn, :new) %></span>
