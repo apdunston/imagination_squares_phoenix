@@ -1,0 +1,4 @@
+
+<p>Howdy, <%= @email %>!</p>
+<a href="/session/new">Login</a>
+<%= link("Log out", to: "/session", method: :delete) %>
