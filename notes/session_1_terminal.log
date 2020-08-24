@@ -1,0 +1,840 @@
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 9ms
+Compiling 1 file (.ex)
+warning: variable "params" is unused (if the variable is not meant to be used, prefix it with an underscore)
+  lib/imagination_squares_phoenix_web/controllers/page_controller.ex:4: ImaginationSquaresPhoenixWeb.PageController.index/2
+
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 5ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 2 files (.ex)
+
+== Compilation error in file lib/imagination_squares_phoenix_web/views/page_view.ex ==
+** (EEx.SyntaxError) lib/imagination_squares_phoenix_web/templates/page/index.html.eex:4: missing token '%>'
+    (eex 1.10.3) lib/eex/compiler.ex:32: EEx.Compiler.compile/2
+    (phoenix 1.5.4) lib/phoenix/template.ex:351: Phoenix.Template.compile/3
+    (phoenix 1.5.4) lib/phoenix/template.ex:166: anonymous fn/4 in Phoenix.Template."MACRO-__before_compile__"/2
+    (elixir 1.10.3) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (phoenix 1.5.4) expanding macro: Phoenix.Template.__before_compile__/1
+    lib/imagination_squares_phoenix_web/views/page_view.ex:1: ImaginationSquaresPhoenixWeb.PageView (module)
+    (elixir 1.10.3) lib/kernel/parallel_compiler.ex:304: anonymous fn/4 in Kernel.ParallelCompiler.spawn_workers/7
+Compiling 2 files (.ex)
+
+== Compilation error in file lib/imagination_squares_phoenix_web/views/page_view.ex ==
+** (EEx.SyntaxError) lib/imagination_squares_phoenix_web/templates/page/index.html.eex:4: missing token '%>'
+    (eex 1.10.3) lib/eex/compiler.ex:32: EEx.Compiler.compile/2
+    (phoenix 1.5.4) lib/phoenix/template.ex:351: Phoenix.Template.compile/3
+    (phoenix 1.5.4) lib/phoenix/template.ex:166: anonymous fn/4 in Phoenix.Template."MACRO-__before_compile__"/2
+    (elixir 1.10.3) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (phoenix 1.5.4) expanding macro: Phoenix.Template.__before_compile__/1
+    lib/imagination_squares_phoenix_web/views/page_view.ex:1: ImaginationSquaresPhoenixWeb.PageView (module)
+    (elixir 1.10.3) lib/kernel/parallel_compiler.ex:304: anonymous fn/4 in Kernel.ParallelCompiler.spawn_workers/7
+Compiling 2 files (.ex)
+
+== Compilation error in file lib/imagination_squares_phoenix_web/views/page_view.ex ==
+** (EEx.SyntaxError) lib/imagination_squares_phoenix_web/templates/page/index.html.eex:4: missing token '%>'
+    (eex 1.10.3) lib/eex/compiler.ex:32: EEx.Compiler.compile/2
+    (phoenix 1.5.4) lib/phoenix/template.ex:351: Phoenix.Template.compile/3
+    (phoenix 1.5.4) lib/phoenix/template.ex:166: anonymous fn/4 in Phoenix.Template."MACRO-__before_compile__"/2
+    (elixir 1.10.3) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (phoenix 1.5.4) expanding macro: Phoenix.Template.__before_compile__/1
+    lib/imagination_squares_phoenix_web/views/page_view.ex:1: ImaginationSquaresPhoenixWeb.PageView (module)
+    (elixir 1.10.3) lib/kernel/parallel_compiler.ex:304: anonymous fn/4 in Kernel.ParallelCompiler.spawn_workers/7
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 2 files (.ex)
+[info] GET /
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 4ms
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 8ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 6ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 7ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 6ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+warning: ImaginationSquaresPhoenixWeb.Router.Helpers.user_path/2 is undefined or private. Did you mean one of:
+
+      * page_path/2
+      * page_path/3
+
+  lib/imagination_squares_phoenix_web/templates/page/index.html.eex:6: ImaginationSquaresPhoenixWeb.PageView."index.html"/1
+
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 500 in 21ms
+[error] #PID<0.1146.0> running ImaginationSquaresPhoenixWeb.Endpoint (connection #PID<0.1145.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /
+** (exit) an exception was raised:
+    ** (ArgumentError) assign @changeset not available in eex template.
+
+Please make sure all proper assigns have been set. If this
+is a child template, ensure assigns are given explicitly by
+the parent template as they are not automatically forwarded.
+
+Available assigns: [:conn, :current_user, :email, :view_module, :view_template]
+
+        (phoenix_html 2.14.2) lib/phoenix_html/engine.ex:134: Phoenix.HTML.Engine.fetch_assign!/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/templates/page/index.html.eex:6: ImaginationSquaresPhoenixWeb.PageView."index.html"/1
+        (phoenix 1.5.4) lib/phoenix/view.ex:310: Phoenix.View.render_within/3
+        (phoenix 1.5.4) lib/phoenix/view.ex:472: Phoenix.View.render_to_iodata/3
+        (phoenix 1.5.4) lib/phoenix/controller.ex:776: Phoenix.Controller.render_and_send/4
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:1: ImaginationSquaresPhoenixWeb.PageController.action/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:1: ImaginationSquaresPhoenixWeb.PageController.phoenix_controller_pipeline/2
+        (phoenix 1.5.4) lib/phoenix/router.ex:352: Phoenix.Router.__call__/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+        (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+        (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+        (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+^C%                                                                                                              ➜  imagination_squares_phoenix iex -S mix phx.server
+Erlang/OTP 23 [erts-11.0.1] [source] [64-bit] [smp:12:12] [ds:12:12:10] [async-threads:1] [hipe]
+
+Compiling 2 files (.ex)
+warning: ImaginationSquaresPhoenixWeb.Router.Helpers.user_path/2 is undefined or private. Did you mean one of:
+
+      * page_path/2
+      * page_path/3
+
+  lib/imagination_squares_phoenix_web/templates/page/index.html.eex:6: ImaginationSquaresPhoenixWeb.PageView."index.html"/1
+
+[info] Running ImaginationSquaresPhoenixWeb.Endpoint with cowboy 2.8.0 at 0.0.0.0:4000 (http)
+[info] Access ImaginationSquaresPhoenixWeb.Endpoint at http://localhost:4000
+[info] [Pow.Store.Backend.MnesiaCache] Mnesia cluster initiated on :nonode@nohost
+Interactive Elixir (1.10.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)>
+webpack is watching the files…
+
+[hardsource:21568f31] Using 1 MB of disk space.
+[hardsource:21568f31] Tracking node dependencies with: package-lock.json.
+[hardsource:21568f31] Reading from cache 21568f31...
+Hash: 29c7e8eb4e19bf5caa3b
+Version: webpack 4.41.5
+Time: 112ms
+Built at: 08/22/2020 7:24:26 PM
+                Asset       Size  Chunks             Chunk Names
+       ../css/app.css   10.7 KiB     app  [emitted]  app
+       ../favicon.ico   1.23 KiB          [emitted]
+../images/phoenix.png   13.6 KiB          [emitted]
+        ../robots.txt  202 bytes          [emitted]
+               app.js   13.5 KiB     app  [emitted]  app
+Entrypoint app = ../css/app.css app.js
+[0] multi ./js/app.js 28 bytes {app} [built]
+    + 5 hidden modules
+[debug] Live reload: priv/static/js/app.js
+[debug] Live reload: priv/static/images/phoenix.png
+[debug] Live reload: priv/static/css/app.css
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: nil
+[info] Sent 500 in 94ms
+[error] #PID<0.604.0> running ImaginationSquaresPhoenixWeb.Endpoint (connection #PID<0.603.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function nil.email/0 is undefined
+        nil.email()
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:6: ImaginationSquaresPhoenixWeb.PageController.index/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:1: ImaginationSquaresPhoenixWeb.PageController.action/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:1: ImaginationSquaresPhoenixWeb.PageController.phoenix_controller_pipeline/2
+        (phoenix 1.5.4) lib/phoenix/router.ex:352: Phoenix.Router.__call__/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+        (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+        (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+        (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+nil
+iex(2)> Compiling 1 file (.ex)
+warning: ImaginationSquaresPhoenixWeb.Router.Helpers.user_path/2 is undefined or private. Did you mean one of:
+
+      * page_path/2
+      * page_path/3
+
+  lib/imagination_squares_phoenix_web/templates/page/index.html.eex:6: ImaginationSquaresPhoenixWeb.PageView."index.html"/1
+
+[info] GET /
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: nil
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 500 in 62ms
+[error] #PID<0.621.0> running ImaginationSquaresPhoenixWeb.Endpoint (connection #PID<0.620.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function ImaginationSquaresPhoenixWeb.Router.Helpers.user_path/2 is undefined or private
+        (imagination_squares_phoenix 0.1.0) ImaginationSquaresPhoenixWeb.Router.Helpers.user_path(%Plug.Conn{adapter: {Plug.Cowboy.Conn, :...}, assigns: %{changeset: %{}, current_user: nil, email: nil, layout: {ImaginationSquaresPhoenixWeb.LayoutView, "app.html"}}, before_send: [#Function<0.73641281/1 in Plug.CSRFProtection.call/2>, #Function<2.102658996/1 in Phoenix.Controller.fetch_flash/2>, #Function<2.11432795/1 in Pow.Plug.Session.call/2>, #Function<0.105793137/1 in Plug.Session.before_send/2>, #Function<0.60895335/1 in Plug.Telemetry.call/2>, #Function<0.33293990/1 in Phoenix.LiveReloader.before_send_inject_reloader/3>], body_params: %{}, cookies: %{"_imagination_squares_phoenix_key" => "SFMyNTY.g3QAAAACbQAAAAtfY3NyZl90b2tlbm0AAAAYNmNXbWRpLWNfXzRsMFFVbUxpX2ZTM3ZIbQAAACBpbWFnaW5hdGlvbl9zcXVhcmVzX3Bob2VuaXhfYXV0aG0AAACKU0ZNeU5UWS5hVzFoWjJsdVlYUnBiMjVmYzNGMVlYSmxjMTl3YUc5bGJtbDRYemxtTlRFNU9HSXhMVEk0TkRndE5EUmlZeTA0WkRFekxUSmtOak00WldRMk16bGxaZy5kLTFtTlFKcnlRT1lSbVk2MC1vdUJYSi1aX2d1M3RQaW1qdEh1YnlGYjlB.R_0gGFDyCxWvxflsxjZ1nVUql1TZW_qmK4OEe7McDCA"}, halted: false, host: "localhost", method: "GET", owner: #PID<0.621.0>, params: %{}, path_info: [], path_params: %{}, port: 4000, private: %{ImaginationSquaresPhoenixWeb.Router => {[], %{}}, :phoenix_action => :index, :phoenix_controller => ImaginationSquaresPhoenixWeb.PageController, :phoenix_endpoint => ImaginationSquaresPhoenixWeb.Endpoint, :phoenix_flash => %{}, :phoenix_format => "html", :phoenix_layout => {ImaginationSquaresPhoenixWeb.LayoutView, :app}, :phoenix_request_logger => {"request_logger", "request_logger"}, :phoenix_router => ImaginationSquaresPhoenixWeb.Router, :phoenix_template => "index.html", :phoenix_view => ImaginationSquaresPhoenixWeb.PageView, :plug_session => %{"_csrf_token" => "6cWmdi-c__4l0QUmLi_fS3vH", "imagination_squares_phoenix_auth" => "SFMyNTY.aW1hZ2luYXRpb25fc3F1YXJlc19waG9lbml4XzlmNTE5OGIxLTI4NDgtNDRiYy04ZDEzLTJkNjM4ZWQ2MzllZg.d-1mNQJryQOYRmY60-ouBXJ-Z_gu3tPimjtHubyFb9A"}, :plug_session_fetch => :done, :pow_config => [mod: Pow.Plug.Session, plug: Pow.Plug.Session, otp_app: :imagination_squares_phoenix]}, query_params: %{}, query_string: "", remote_ip: {127, 0, 0, 1}, req_cookies: %{"_imagination_squares_phoenix_key" => "SFMyNTY.g3QAAAACbQAAAAtfY3NyZl90b2tlbm0AAAAYNmNXbWRpLWNfXzRsMFFVbUxpX2ZTM3ZIbQAAACBpbWFnaW5hdGlvbl9zcXVhcmVzX3Bob2VuaXhfYXV0aG0AAACKU0ZNeU5UWS5hVzFoWjJsdVlYUnBiMjVmYzNGMVlYSmxjMTl3YUc5bGJtbDRYemxtTlRFNU9HSXhMVEk0TkRndE5EUmlZeTA0WkRFekxUSmtOak00WldRMk16bGxaZy5kLTFtTlFKcnlRT1lSbVk2MC1vdUJYSi1aX2d1M3RQaW1qdEh1YnlGYjlB.R_0gGFDyCxWvxflsxjZ1nVUql1TZW_qmK4OEe7McDCA"}, req_headers: [{"accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"}, {"accept-encoding", "gzip, deflate"}, {"accept-language", "en-US,en;q=0.5"}, {"cache-control", "max-age=0"}, {"connection", "keep-alive"}, {"cookie", "_imagination_squares_phoenix_key=SFMyNTY.g3QAAAACbQAAAAtfY3NyZl90b2tlbm0AAAAYNmNXbWRpLWNfXzRsMFFVbUxpX2ZTM3ZIbQAAACBpbWFnaW5hdGlvbl9zcXVhcmVzX3Bob2VuaXhfYXV0aG0AAACKU0ZNeU5UWS5hVzFoWjJsdVlYUnBiMjVmYzNGMVlYSmxjMTl3YUc5bGJtbDRYemxtTlRFNU9HSXhMVEk0TkRndE5EUmlZeTA0WkRFekxUSmtOak00WldRMk16bGxaZy5kLTFtTlFKcnlRT1lSbVk2MC1vdUJYSi1aX2d1M3RQaW1qdEh1YnlGYjlB.R_0gGFDyCxWvxflsxjZ1nVUql1TZW_qmK4OEe7McDCA"}, {"host", "localhost:4000"}, {"referer", "http://localhost:4000/"}, {"upgrade-insecure-requests", "1"}, {"user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:79.0) Gecko/20100101 Firefox/79.0"}], request_path: "/", resp_body: nil, resp_cookies: %{}, resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}, {"x-request-id", "Fi26utQZLCjD9QIAAASD"}, {"x-frame-options", "SAMEORIGIN"}, {"x-xss-protection", "1; mode=block"}, {"x-content-type-options", "nosniff"}, {"x-download-options", "noopen"}, {"x-permitted-cross-domain-policies", "none"}, {"cross-origin-window-policy", "deny"}], scheme: :http, script_name: [], secret_key_base: :..., state: :unset, status: nil}, :create)
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/templates/page/index.html.eex:6: ImaginationSquaresPhoenixWeb.PageView."index.html"/1
+        (phoenix 1.5.4) lib/phoenix/view.ex:310: Phoenix.View.render_within/3
+        (phoenix 1.5.4) lib/phoenix/view.ex:472: Phoenix.View.render_to_iodata/3
+        (phoenix 1.5.4) lib/phoenix/controller.ex:776: Phoenix.Controller.render_and_send/4
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:1: ImaginationSquaresPhoenixWeb.PageController.action/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:1: ImaginationSquaresPhoenixWeb.PageController.phoenix_controller_pipeline/2
+        (phoenix 1.5.4) lib/phoenix/router.ex:352: Phoenix.Router.__call__/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+        (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+        (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+        (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+^C%                                                                                                              ➜  imagination_squares_phoenix
+➜  imagination_squares_phoenix mix phx.routes
+     pow_session_path  GET     /session/new                           Pow.Phoenix.SessionController :new
+     pow_session_path  POST    /session                               Pow.Phoenix.SessionController :create
+     pow_session_path  DELETE  /session                               Pow.Phoenix.SessionController :delete
+pow_registration_path  GET     /registration/edit                     Pow.Phoenix.RegistrationController :edit
+pow_registration_path  GET     /registration/new                      Pow.Phoenix.RegistrationController :new
+pow_registration_path  POST    /registration                          Pow.Phoenix.RegistrationController :create
+pow_registration_path  PATCH   /registration                          Pow.Phoenix.RegistrationController :update
+                       PUT     /registration                          Pow.Phoenix.RegistrationController :update
+pow_registration_path  DELETE  /registration                          Pow.Phoenix.RegistrationController :delete
+            page_path  GET     /                                      ImaginationSquaresPhoenixWeb.PageController :index
+  live_dashboard_path  GET     /dashboard                             Phoenix.LiveView.Plug :home
+  live_dashboard_path  GET     /dashboard/:node/home                  Phoenix.LiveView.Plug :home
+  live_dashboard_path  GET     /dashboard/:node/os_mon                Phoenix.LiveView.Plug :os_mon
+  live_dashboard_path  GET     /dashboard/:node/metrics               Phoenix.LiveView.Plug :metrics
+  live_dashboard_path  GET     /dashboard/:node/applications          Phoenix.LiveView.Plug :applications
+  live_dashboard_path  GET     /dashboard/:node/processes             Phoenix.LiveView.Plug :processes
+  live_dashboard_path  GET     /dashboard/:node/ports                 Phoenix.LiveView.Plug :ports
+  live_dashboard_path  GET     /dashboard/:node/sockets               Phoenix.LiveView.Plug :sockets
+  live_dashboard_path  GET     /dashboard/:node/ets                   Phoenix.LiveView.Plug :ets
+  live_dashboard_path  GET     /dashboard/:node/request_logger        Phoenix.LiveView.Plug :request_logger
+  live_dashboard_path  GET     /dashboard/:node/:page                 Phoenix.LiveView.Plug :page
+            websocket  WS      /live/websocket                        Phoenix.LiveView.Socket
+             longpoll  GET     /live/longpoll                         Phoenix.LiveView.Socket
+             longpoll  POST    /live/longpoll                         Phoenix.LiveView.Socket
+            websocket  WS      /socket/websocket                      ImaginationSquaresPhoenixWeb.UserSocket
+
+➜  imagination_squares_phoenix iex -S mix phx.server
+Erlang/OTP 23 [erts-11.0.1] [source] [64-bit] [smp:12:12] [ds:12:12:10] [async-threads:1] [hipe]
+
+Compiling 1 file (.ex)
+[info] Running ImaginationSquaresPhoenixWeb.Endpoint with cowboy 2.8.0 at 0.0.0.0:4000 (http)
+[info] Access ImaginationSquaresPhoenixWeb.Endpoint at http://localhost:4000
+[info] [Pow.Store.Backend.MnesiaCache] Mnesia cluster initiated on :nonode@nohost
+Interactive Elixir (1.10.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)>
+webpack is watching the files…
+
+[hardsource:21568f31] Using 1 MB of disk space.
+[hardsource:21568f31] Tracking node dependencies with: package-lock.json.
+[hardsource:21568f31] Reading from cache 21568f31...
+Hash: 29c7e8eb4e19bf5caa3b
+Version: webpack 4.41.5
+Time: 96ms
+Built at: 08/22/2020 7:27:07 PM
+                Asset       Size  Chunks             Chunk Names
+       ../css/app.css   10.7 KiB     app  [emitted]  app
+       ../favicon.ico   1.23 KiB          [emitted]
+../images/phoenix.png   13.6 KiB          [emitted]
+        ../robots.txt  202 bytes          [emitted]
+               app.js   13.5 KiB     app  [emitted]  app
+Entrypoint app = ../css/app.css app.js
+[0] multi ./js/app.js 28 bytes {app} [built]
+    + 5 hidden modules
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: nil
+[info] Sent 500 in 85ms
+[error] #PID<0.597.0> running ImaginationSquaresPhoenixWeb.Endpoint (connection #PID<0.593.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Phoenix.HTML.FormData not implemented for %{} of type Map. This protocol is implemented for the following type(s): Ecto.Changeset, Plug.Conn, Atom
+        (phoenix_html 2.14.2) lib/phoenix_html/form_data.ex:1: Phoenix.HTML.FormData.impl_for!/1
+        (phoenix_html 2.14.2) lib/phoenix_html/form_data.ex:15: Phoenix.HTML.FormData.to_form/2
+        (phoenix_html 2.14.2) lib/phoenix_html/form.ex:325: Phoenix.HTML.Form.form_for/3
+        (phoenix_html 2.14.2) lib/phoenix_html/form.ex:371: Phoenix.HTML.Form.form_for/4
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/templates/page/index.html.eex:6: ImaginationSquaresPhoenixWeb.PageView."index.html"/1
+        (phoenix 1.5.4) lib/phoenix/view.ex:310: Phoenix.View.render_within/3
+        (phoenix 1.5.4) lib/phoenix/view.ex:472: Phoenix.View.render_to_iodata/3
+        (phoenix 1.5.4) lib/phoenix/controller.ex:776: Phoenix.Controller.render_and_send/4
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:1: ImaginationSquaresPhoenixWeb.PageController.action/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/controllers/page_controller.ex:1: ImaginationSquaresPhoenixWeb.PageController.phoenix_controller_pipeline/2
+        (phoenix 1.5.4) lib/phoenix/router.ex:352: Phoenix.Router.__call__/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+        (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+        (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+        (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+        (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+        (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+
+== Compilation error in file lib/imagination_squares_phoenix_web/views/page_view.ex ==
+** (EEx.SyntaxError) lib/imagination_squares_phoenix_web/templates/page/index.html.eex:18: unexpected end of expression <% end %>
+    (eex 1.10.3) lib/eex/compiler.ex:123: EEx.Compiler.generate_buffer/4
+    (phoenix 1.5.4) lib/phoenix/template.ex:351: Phoenix.Template.compile/3
+    (phoenix 1.5.4) lib/phoenix/template.ex:166: anonymous fn/4 in Phoenix.Template."MACRO-__before_compile__"/2
+    (elixir 1.10.3) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (phoenix 1.5.4) expanding macro: Phoenix.Template.__before_compile__/1
+    lib/imagination_squares_phoenix_web/views/page_view.ex:1: ImaginationSquaresPhoenixWeb.PageView (module)
+    (elixir 1.10.3) lib/kernel/parallel_compiler.ex:304: anonymous fn/4 in Kernel.ParallelCompiler.spawn_workers/7
+Compiling 1 file (.ex)
+
+== Compilation error in file lib/imagination_squares_phoenix_web/views/page_view.ex ==
+** (EEx.SyntaxError) lib/imagination_squares_phoenix_web/templates/page/index.html.eex:18: unexpected end of expression <% end %>
+    (eex 1.10.3) lib/eex/compiler.ex:123: EEx.Compiler.generate_buffer/4
+    (phoenix 1.5.4) lib/phoenix/template.ex:351: Phoenix.Template.compile/3
+    (phoenix 1.5.4) lib/phoenix/template.ex:166: anonymous fn/4 in Phoenix.Template."MACRO-__before_compile__"/2
+    (elixir 1.10.3) lib/enum.ex:2111: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (phoenix 1.5.4) expanding macro: Phoenix.Template.__before_compile__/1
+    lib/imagination_squares_phoenix_web/views/page_view.ex:1: ImaginationSquaresPhoenixWeb.PageView (module)
+    (elixir 1.10.3) lib/kernel/parallel_compiler.ex:304: anonymous fn/4 in Kernel.ParallelCompiler.spawn_workers/7
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: nil
+[info] Sent 200 in 5ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: nil
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 7ms
+[info] GET /session
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /session (ImaginationSquaresPhoenixWeb.Router)
+    (imagination_squares_phoenix 0.1.0) lib/phoenix/router.ex:402: ImaginationSquaresPhoenixWeb.Router.call/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+    (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+    (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+    (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+[info] GET /
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: nil
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 5ms
+[info] GET /session/new
+[debug] Processing with Pow.Phoenix.SessionController.new/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 31ms
+[info] POST /session
+[debug] Processing with Pow.Phoenix.SessionController.create/2
+  Parameters: %{"_csrf_token" => "ZysgHFIxHy8ZbEc1QA4hQDs2DCt-VBkjQHwq6X2LF3sYp_t-w_SM-gok", "user" => %{"email" => "adrian@x-omega.com", "password" => "[FILTERED]"}}
+  Pipelines: [:browser]
+[debug] QUERY OK source="users" db=21.7ms queue=5.7ms idle=414.6ms
+SELECT u0."id", u0."password_hash", u0."email", u0."inserted_at", u0."updated_at" FROM "users" AS u0 WHERE (u0."email" = $1) ["adrian@x-omega.com"]
+[info] Sent 302 in 530ms
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 11ms
+[info] GET /session
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /session (ImaginationSquaresPhoenixWeb.Router)
+    (imagination_squares_phoenix 0.1.0) lib/phoenix/router.ex:402: ImaginationSquaresPhoenixWeb.Router.call/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+    (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+    (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+    (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 6ms
+[info] GET /
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 6ms
+[info] GET /session
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /session (ImaginationSquaresPhoenixWeb.Router)
+    (imagination_squares_phoenix 0.1.0) lib/phoenix/router.ex:402: ImaginationSquaresPhoenixWeb.Router.call/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+    (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+    (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+    (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+Compiling 1 file (.ex)
+[info] GET /
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 7ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 6ms
+[info] GET /session
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /session (ImaginationSquaresPhoenixWeb.Router)
+    (imagination_squares_phoenix 0.1.0) lib/phoenix/router.ex:402: ImaginationSquaresPhoenixWeb.Router.call/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+    (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+    (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+    (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+Compiling 1 file (.ex)
+[info] GET /session
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /session (ImaginationSquaresPhoenixWeb.Router)
+    (imagination_squares_phoenix 0.1.0) lib/phoenix/router.ex:402: ImaginationSquaresPhoenixWeb.Router.call/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+    (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+    (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+    (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 6ms
+[info] GET /session
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /session (ImaginationSquaresPhoenixWeb.Router)
+    (imagination_squares_phoenix 0.1.0) lib/phoenix/router.ex:402: ImaginationSquaresPhoenixWeb.Router.call/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+    (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+    (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+    (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+Compiling 1 file (.ex)
+[info] GET /session
+[debug] ** (Phoenix.Router.NoRouteError) no route found for GET /session (ImaginationSquaresPhoenixWeb.Router)
+    (imagination_squares_phoenix 0.1.0) lib/phoenix/router.ex:402: ImaginationSquaresPhoenixWeb.Router.call/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.plug_builder_call/2
+    (imagination_squares_phoenix 0.1.0) lib/plug/debugger.ex:132: ImaginationSquaresPhoenixWeb.Endpoint."call (overridable 3)"/2
+    (imagination_squares_phoenix 0.1.0) lib/imagination_squares_phoenix_web/endpoint.ex:1: ImaginationSquaresPhoenixWeb.Endpoint.call/2
+    (phoenix 1.5.4) lib/phoenix/endpoint/cowboy2_handler.ex:65: Phoenix.Endpoint.Cowboy2Handler.init/4
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:300: :cowboy_stream_h.execute/3
+    (cowboy 2.8.0) /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/deps/cowboy/src/cowboy_stream_h.erl:291: :cowboy_stream_h.request_process/3
+    (stdlib 3.13) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
+
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 6ms
+[info] POST /session
+[debug] Processing with Pow.Phoenix.SessionController.delete/2
+  Parameters: %{"_csrf_token" => "Rk5iOVJcHVAFDUQoZRhtJHUbHTYJSRMvp-5T6503ZRpDUI8I9rBPZzeg", "_method" => "delete"}
+  Pipelines: [:browser]
+[info] Sent 302 in 14ms
+[info] GET /session/new
+[debug] Processing with Pow.Phoenix.SessionController.new/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 859µs
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: nil
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 1ms
+[info] GET /session/new
+[debug] Processing with Pow.Phoenix.SessionController.new/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 414µs
+[info] POST /session
+[debug] Processing with Pow.Phoenix.SessionController.create/2
+  Parameters: %{"_csrf_token" => "YwkfKFUOWglrZ39ZUmE0ACIQBxYmXjF-UjHE1gwj48K5b0amnyXpumG6", "user" => %{"email" => "adrian@x-omega.com", "password" => "[FILTERED]"}}
+  Pipelines: [:browser]
+[debug] QUERY OK source="users" db=2.7ms idle=1044.7ms
+SELECT u0."id", u0."password_hash", u0."email", u0."inserted_at", u0."updated_at" FROM "users" AS u0 WHERE (u0."email" = $1) ["adrian@x-omega.com"]
+[info] Sent 302 in 485ms
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 4ms
+[info] GET /session/new
+[debug] Processing with Pow.Phoenix.SessionController.new/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 302 in 9ms
+[debug] Pow.Phoenix.SessionController halted in :require_not_authenticated/2
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 6ms
+[info] GET /session/new
+[debug] Processing with Pow.Phoenix.SessionController.new/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 302 in 6ms
+[debug] Pow.Phoenix.SessionController halted in :require_not_authenticated/2
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 5ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 6ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 7ms
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 7ms
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 7ms
+[debug] Live reload: lib/imagination_squares_phoenix_web/templates/page/index.html.eex
+Compiling 1 file (.ex)
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 5ms
+[info] POST /session
+[debug] Processing with Pow.Phoenix.SessionController.delete/2
+  Parameters: %{"_csrf_token" => "AQpnWjVYRRFrbUYfSCc-Bx0oOQJhRiMX7i07Q1hr42rsxvkjQAfd2uU_", "_method" => "delete"}
+  Pipelines: [:browser]
+[info] Sent 302 in 13ms
+[info] GET /session/new
+[debug] Processing with Pow.Phoenix.SessionController.new/2
+  Parameters: %{}
+  Pipelines: [:browser]
+[info] Sent 200 in 529µs
+[info] POST /session
+[debug] Processing with Pow.Phoenix.SessionController.create/2
+  Parameters: %{"_csrf_token" => "TjwGMl0gGDdoGgwWZmZnAiITagcjXxcqx_Q_9I5T7E8zV72onz5aplab", "user" => %{"email" => "adrian@x-omega.com", "password" => "[FILTERED]"}}
+  Pipelines: [:browser]
+[debug] QUERY OK source="users" db=4.8ms idle=1155.0ms
+SELECT u0."id", u0."password_hash", u0."email", u0."inserted_at", u0."updated_at" FROM "users" AS u0 WHERE (u0."email" = $1) ["adrian@x-omega.com"]
+[info] Sent 302 in 544ms
+[info] GET /
+[debug] Processing with ImaginationSquaresPhoenixWeb.PageController.index/2
+  Parameters: %{}
+  Pipelines: [:browser]
+!!ADRIAN /Users/bitcapulet/secondaryDev/imagination_squares_phoenix/lib/imagination_squares_phoenix_web/controllers/page_controller.ex:5: %ImaginationSquaresPhoenix.Users.User{
+  __meta__: #Ecto.Schema.Metadata<:loaded, "users">,
+  current_password: nil,
+  email: "adrian@x-omega.com",
+  id: 1,
+  inserted_at: ~N[2020-08-22 23:11:59],
+  password: nil,
+  password_hash: "$pbkdf2-sha512$100000$Aw+ESc5H3SpuUEgIxSUSzQ==$Mq4AJeWOt0CBtNLGbI+Y43nvivjuRkc+Be/ytxDqe8WeyxL0gnJRBz3PMW52hTORjGeP2Pb6P7qxNDMKWTHolw==",
+  updated_at: ~N[2020-08-22 23:11:59]
+}
+[info] Sent 200 in 5ms
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+^C%                                                                                                              ➜  imagination_squares_phoenix git:(master)
+➜  imagination_squares_phoenix git:(master)
+➜  imagination_squares_phoenix git:(master)

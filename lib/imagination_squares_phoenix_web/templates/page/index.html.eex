@@ -1,4 +1,27 @@
 
-<p>Howdy, <%= @email %>!</p>
-<a href="/session/new">Login</a>
-<%= link("Log out", to: "/session", method: :delete) %>
+
+<%= if is_nil(@user) do %>
+  Please log in so you can create imaginary worlds!
+  <br>
+  <a href="/session/new">Login</a>
+<% else %>
+  <p>Howdy, <%= @user.email %>!</p>
+
+  <%= for drawing <- @user.drawings do %>
+    <%= drawing.name %><br/>
+  <% end %>
+
+  <%= form_for @new_drawing, Routes.drawing_path(@conn, :create), fn f -> %>
+  <label>
+    Name: <%= text_input f, :name %>
+  </label>
+
+  <label>
+    Content: <%= textarea f, :content %>
+  </label>
+
+  <%= submit "Submit" %>
+<% end %>
+
+  <%= link("Log out", to: "/session", method: :delete) %>
+<% end %>

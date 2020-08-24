@@ -6,4 +6,4 @@
 
  {:pow,"~> 1.0.0"}
 
- mix phoenix.gen.model Drawing drawings user_id:integer content:text
+mix phx.gen.context Worlds Drawing drawings user_id:integer name:string content:map
