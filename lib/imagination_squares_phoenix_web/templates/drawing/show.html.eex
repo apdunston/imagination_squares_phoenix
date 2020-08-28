@@ -1,18 +1,27 @@
-<h1>Show Drawing</h1>
+<div style="float: right"><canvas id="main"></canvas></div>
+<div style="float: left">
+  <button id="draw" disabled=true>draw</button> <br>
+  <button id="fill">fill</button> <br>
+  <button id="line">line</button> <br>
+  <button id="label">label</button> <br>
 
-<ul>
+  <button id="save">save</button> <br>
+  <button id="load">load</button> <br>
+  <button id="undo">undo</button> <br>
+  <button id="redo">redo</button> <br>
 
-  <li>
-    <strong>Name:</strong>
-    <%= @drawing.name %>
-  </li>
+  <br>
+  <br>
+  <br>
 
-  <li>
-    <strong>Content:</strong>
-    <%= @drawing.content %>
-  </li>
+  <button id="img">img</button>
+</div>
 
-</ul>
-
-<span><%= link "Edit", to: Routes.drawing_path(@conn, :edit, @drawing) %></span>
-<span><%= link "Back", to: Routes.drawing_path(@conn, :index) %></span>
+<div class="is-hidden modal-overlay">
+  <div class="modal">
+    <span class="button-close">×</span>
+    <div id="modal-body"></div>
+    <!-- <img src='https://i.imgur.com/Qnkww5n.jpg' width="95%"> -->
+  </div>
+</div>
+<script src="<%= Routes.static_path(@conn, "/js/mappus/index.js") %>" type="module"></script>

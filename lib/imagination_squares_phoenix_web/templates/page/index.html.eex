@@ -8,7 +8,7 @@
   <p>Howdy, <%= @user.email %>!</p>
 
   <%= for drawing <- @user.drawings do %>
-    <%= drawing.name %><br/>
+    <%= link drawing.name, to: Routes.drawing_path(@conn, :show, drawing) %><br>
   <% end %>
 
   <%= form_for @new_drawing, Routes.drawing_path(@conn, :create), fn f -> %>
