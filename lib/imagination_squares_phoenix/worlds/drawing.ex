@@ -4,7 +4,7 @@ defmodule ImaginationSquaresPhoenix.Worlds.Drawing do
   alias ImaginationSquaresPhoenix.Users.User
 
   schema "drawings" do
-    field :content, :map
+    field :content, :string
     field :name, :string
     # field :user_id, :integer
 

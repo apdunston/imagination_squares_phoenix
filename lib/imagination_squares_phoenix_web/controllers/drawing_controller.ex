@@ -30,7 +30,8 @@ defmodule ImaginationSquaresPhoenixWeb.DrawingController do
 
   def show(conn, %{"id" => id}) do
     drawing = Worlds.get_drawing!(id)
-    render(conn, "show.html", drawing: drawing)
+    changeset = Worlds.change_drawing(drawing)
+    render(conn, "show.html", drawing: drawing, changeset: changeset)
   end
 
   def edit(conn, %{"id" => id}) do
